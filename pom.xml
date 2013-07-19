@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>retinajs</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>retina.js</name>
     <description>WebJar for retina.js</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/retinajs</url>
         <connection>scm:git:https://github.com/webjars/retinajs.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/retinajs.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>retinajs-0.0.2</tag>
     </scm>
     
     <properties>
@@ -79,7 +79,7 @@
                                 <echo message="unzip archive" />
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
-                                <move file="${project.build.directory}/retina/retina.js" todir="${destDir}"/>
+                                <move file="${project.build.directory}/retina/retina.js" todir="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
